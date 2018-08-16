@@ -15,7 +15,7 @@ namespace Typesafe.Mailgun.Tests.Routing
 
 			foreach (var route in routes)
 			{
-				Assert.IsNotNullOrEmpty(route.Id);
+			    Assert.IsFalse(string.IsNullOrEmpty(route.Id));
 			}
 		}
 	}
