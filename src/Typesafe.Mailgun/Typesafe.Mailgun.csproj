@@ -4,7 +4,7 @@
     <OutputPath>..\..\bin\$(Configuration)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Product>mnailgun</Product>
-    <PackageId>Typesafe.Mailgun</PackageId>
+    <PackageId>mnailgun2</PackageId>
     <Version>2.0.1</Version>
     <AssemblyVersion>2.0.1.0</AssemblyVersion>
     <FileVersion>2.0.1.0</FileVersion>
@@ -13,7 +13,7 @@
     <Company>Typesafe</Company>
     <Description>Provides simple access to Mailgun's REST API from .Net applications: Send messages, create web hooks, manage mailboxes, etc.</Description>
     <Summary>A simple .Net wrapper library for the Mailgun API.</Summary>
-    <Authors>Gino Heyman</Authors>
+    <Authors>Gino Heyman, Zhmayev Yaroslav</Authors>
     <Owners>Gino Heyman</Owners>
     <PackageTags>mailgun email</PackageTags>
     <PackageProjectUrl>https://github.com/typesafe/mnailgun</PackageProjectUrl>
