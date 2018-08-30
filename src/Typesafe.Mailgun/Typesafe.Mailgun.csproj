@@ -4,9 +4,9 @@
     <OutputPath>..\..\bin\$(Configuration)\</OutputPath>
     <Product>mnailgun</Product>
     <PackageId>mnailgun2</PackageId>
-    <Version>2.0.1</Version>
-    <AssemblyVersion>2.0.1.0</AssemblyVersion>
-    <FileVersion>2.0.1.0</FileVersion>
+    <Version>2.0.2</Version>
+    <AssemblyVersion>2.0.2.0</AssemblyVersion>
+    <FileVersion>2.0.2.0</FileVersion>
     <NeutralLanguage>en-US</NeutralLanguage>
     <Copyright>Copyright © Gino Heyman 2011</Copyright>
     <Company>Typesafe</Company>
