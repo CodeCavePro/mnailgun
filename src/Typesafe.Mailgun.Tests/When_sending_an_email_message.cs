@@ -18,11 +18,5 @@ namespace Typesafe.Mailgun.Tests
 		{
 			Assert.IsNotNull(result.Message);
 		}
-
-		[Test]
-		public void the_response_should_include_an_id()
-		{
-			Assert.IsNotNull(result.Id);
-		}
 	}
 }

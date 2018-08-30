@@ -20,10 +20,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\Typesafe.Mailgun\Typesafe.Mailgun.csproj">
-      <Project>{38A5D96D-36BC-4F37-9477-CD18FB32563B}</Project>
-      <Name>Typesafe.Mailgun</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\Typesafe.Mailgun\Typesafe.Mailgun.csproj" />
   </ItemGroup>
   
   <ItemGroup>

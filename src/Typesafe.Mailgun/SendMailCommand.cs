@@ -30,7 +30,7 @@ namespace Typesafe.Mailgun
 
 	    public override SendMailCommandResult TranslateResponse(MailgunHttpResponse response)
 	    {
-		    return new SendMailCommandResult(response.Body.id.ToString(), response.Message);
+		    return new SendMailCommandResult(response.Body.id?.ToString(), response.Message);
 	    }
     }
 }

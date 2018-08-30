@@ -36,11 +36,20 @@ namespace Typesafe.Mailgun
 
 		private static void ThrowIfBadStatusCode(MailgunHttpResponse response)
 		{
-			if (response.StatusCode == HttpStatusCode.Unauthorized) throw new AuthenticationException();
+            switch(response.StatusCode)
+            {
+                case HttpStatusCode.Unauthorized:
+                     throw new AuthenticationException();
 
-			if (response.StatusCode >= HttpStatusCode.InternalServerError) throw new Exception("Internal Server Error");
+                case HttpStatusCode internalError when internalError >= HttpStatusCode.InternalServerError:
+                    var errorMessage = string.IsNullOrWhiteSpace(response?.Message)
+                        ? "Internal Server Error"
+                        : $"Internal Server Error: {response.Message}";
+                    throw new Exception(errorMessage);
 
-			if (response.StatusCode >= HttpStatusCode.BadRequest) throw new InvalidOperationException(response.Message);
+                case HttpStatusCode badRequest when badRequest >= HttpStatusCode.BadRequest && !(response?.Message?.StartsWith("Great job!") ?? false):
+                    throw new InvalidOperationException(response.Message);
+            }
 		}
 
 		protected internal virtual IEnumerable<FormPart> CreateFormParts()
