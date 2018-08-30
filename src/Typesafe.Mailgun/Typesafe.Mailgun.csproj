@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-	<TargetFramework>net40</TargetFramework>
+	  <TargetFrameworks>net40;net45;netstandard20</TargetFrameworks>
     <OutputPath>..\..\bin\$(Configuration)\</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <Product>mnailgun</Product>
     <PackageId>mnailgun2</PackageId>
     <Version>2.0.1</Version>
